@@ -91,6 +91,9 @@
       },
       {
         "__id__": 148
+      },
+      {
+        "__id__": 149
       }
     ],
     "_prefab": null,
@@ -6159,5 +6162,15 @@
       "__id__": 2
     },
     "_enabled": true
+  },
+  {
+    "__type__": "e5463FKbzlLEqh1TL4BC/Fz",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "is_proto_json": true
   }
 ]
