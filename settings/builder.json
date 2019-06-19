@@ -14,9 +14,9 @@
   "oauthLoginServer": "",
   "optimizeHotUpdate": false,
   "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
     "upsideDown": false
   },
   "packageName": "org.cocos2d.my_cocos_client",
@@ -26,7 +26,7 @@
     "orientation": "portrait"
   },
   "renderMode": "0",
-  "startScene": "729a412b-8211-4fc0-a4bc-94cafbae535b",
+  "startScene": "26cf652e-8afc-4e99-b315-969033a6b74d",
   "title": "my_cocos_client",
   "webOrientation": "auto",
   "wechatgame": {
