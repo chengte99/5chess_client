@@ -31,6 +31,7 @@ cc.Class({
         //     }
         // },
         is_proto_json: false,
+        is_release: false,
 
     },
 
@@ -38,10 +39,15 @@ cc.Class({
 
     onLoad () {
         this.server_info = null;
+        if(this.is_release){
+            this.server_ip = "http://cocosdemo.nctu.me:10001";
+        }else{
+            this.server_ip = "http://127.0.0.1:10001";
+        }
     },
 
     get_server_info: function(){
-        http.get("http://127.0.0.1:10001", "/server_info", null, function(err, ret){
+        http.get(this.server_ip, "/server_info", null, function(err, ret){
             if(err){
                 console.log("connect_server get fail");
                 console.log(err);
@@ -55,7 +61,7 @@ cc.Class({
             this.server_info = json;
 
             this.connect_server();
-            
+
         }.bind(this));
     },
 
