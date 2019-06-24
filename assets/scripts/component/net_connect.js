@@ -32,6 +32,7 @@ cc.Class({
         // },
         is_proto_json: false,
         is_release: false,
+        release_url: "http://127.0.0.1:10001",
 
     },
 
@@ -40,7 +41,7 @@ cc.Class({
     onLoad () {
         this.server_info = null;
         if(this.is_release){
-            this.server_ip = "http://cocosdemo.nctu.me:10001";
+            this.server_ip = this.release_url;
         }else{
             this.server_ip = "http://127.0.0.1:10001";
         }

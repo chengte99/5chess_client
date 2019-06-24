@@ -6360,7 +6360,8 @@
       "__id__": 147
     },
     "_enabled": true,
-    "url": "http://127.0.0.1:10001"
+    "is_release": true,
+    "release_url": "http://cocosdemo.nctu.me:10001"
   },
   {
     "__type__": "cc.Canvas",
@@ -6396,6 +6397,7 @@
     },
     "_enabled": true,
     "is_proto_json": true,
-    "is_release": true
+    "is_release": true,
+    "release_url": "http://cocosdemo.nctu.me:10001"
   }
 ]

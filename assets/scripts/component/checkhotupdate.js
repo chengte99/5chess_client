@@ -14,12 +14,18 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-        url: "http://127.0.0.1:10001",
+        is_release: false,
+        release_url: "http://127.0.0.1:10001",
+
     },
 
     // use this for initialization
     onLoad: function () {
-
+        if(this.is_release){
+            this.url = this.release_url;
+        }else{
+            this.url = "http://127.0.0.1:10001";
+        }
     },
 
     set_hotupdate_search_path: function() {
@@ -174,15 +180,11 @@ cc.Class({
                 i ++;
                 if (i >= download_array.length) {
                     jsb.fileUtils.writeStringToFile(data, this.hotpath + "/hotupdate.json");
-                    this.node.removeFromParent();
-                    
-                    this.scheduleOnce(function(){
 
-                        console.log("即将重起...................");
-                        cc.audioEngine.stopAll();
-                        cc.game.restart();
-                        return;
-                    }, 3000);
+                    this.node.removeFromParent();
+                    console.log("即将重起...................");
+                    cc.audioEngine.stopAll();
+                    cc.game.restart();
                     
                 }
 
