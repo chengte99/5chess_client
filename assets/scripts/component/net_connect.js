@@ -31,8 +31,6 @@ cc.Class({
         //     }
         // },
         is_proto_json: false,
-        release_url: "http://127.0.0.1:10001",
-
     },
 
     // LIFE-CYCLE CALLBACKS:
