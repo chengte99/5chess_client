@@ -27,7 +27,7 @@ var http = {
                 }
             }
             else {
-                // callback(xhr.readyState + ":" + xhr.status, null);
+                callback(xhr.readyState + ":" + xhr.status, null);
             }
         };
         
@@ -66,7 +66,7 @@ var http = {
                 }
             }
             else {
-                // callback(xhr.readyState + ":" + xhr.status, null);
+                callback(xhr.readyState + ":" + xhr.status, null);
             }
         };
         if (body) {
@@ -100,7 +100,7 @@ var http = {
                 callback(null, ints);
             }
             else {
-                // callback(xhr.readyState + ":" + xhr.status, null);
+                callback(xhr.readyState + ":" + xhr.status, null);
             }
         };
         xhr.send();
