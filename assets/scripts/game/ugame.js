@@ -94,6 +94,7 @@ if(!uname_upwd_json){
     ugame.guest_key = cc.sys.localStorage.getItem("guest_key");
     if(!ugame.guest_key){
         ugame.guest_key = utils.random_string(32);
+        cc.sys.localStorage.setItem("guest_key", ugame.guest_key);
     }
 }else{
     var body = JSON.parse(uname_upwd_json);
