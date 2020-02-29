@@ -81,7 +81,6 @@ cc.Class({
 
     login_success: function(){
         game_system.get_game_info();
-        cc.director.loadScene("home_scene");
     },
 
     phone_reg_verify_code_return: function(status){
@@ -132,6 +131,7 @@ cc.Class({
 
         console.log("get_game_info_return success!!!");
         ugame.save_user_game_info(body);
+        cc.director.loadScene("home_scene");
     },
 
     on_auth_service: function(stype, ctype, body){
@@ -171,8 +171,10 @@ cc.Class({
 
     on_quick_login_click: function(){
         if(ugame.is_guest){
+            console.log("guest_login ...");
             auth.guest_login();
         }else{
+            console.log("uname_login ...");
             auth.uname_login();
         }   
     },

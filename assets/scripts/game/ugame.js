@@ -85,6 +85,9 @@ var ugame = {
 // ugame.save_temp_uname_upwd("0929049751", "202cb962ac59075b964b07152d234b70");
 // ugame.bind_uname_success();
 
+// cc.sys.localStorage.removeItem("uname_upwd");
+// cc.sys.localStorage.removeItem("guest_key");
+
 var uname_upwd_json = cc.sys.localStorage.getItem("uname_upwd");
 if(!uname_upwd_json){
     ugame.is_guest = true;
