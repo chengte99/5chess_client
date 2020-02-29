@@ -6360,7 +6360,8 @@
       "__id__": 147
     },
     "_enabled": true,
-    "url": "http://127.0.0.1:10001"
+    "is_release": true,
+    "release_url": "http://www.yuhaolu.cn:10001"
   },
   {
     "__type__": "cc.Canvas",
@@ -6395,6 +6396,8 @@
       "__id__": 2
     },
     "_enabled": true,
-    "is_proto_json": true
+    "is_proto_json": true,
+    "is_release": true,
+    "release_url": "http://www.yuhaolu.cn:10001"
   }
 ]

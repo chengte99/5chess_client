@@ -14,13 +14,18 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-        url: "http://127.0.0.1:10001",
+        is_release: true,
+        release_url: "http://www.yuhaolu.cn:10001",
 
     },
 
     // use this for initialization
     onLoad: function () {
-        
+        if(this.is_release){
+            this.url = this.release_url;
+        }else{
+            this.url = "http://127.0.0.1:10001";
+        }
     },
 
     set_hotupdate_search_path: function() {
